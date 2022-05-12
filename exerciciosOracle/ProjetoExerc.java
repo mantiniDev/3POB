@@ -1,4 +1,4 @@
-package Projeto;
+package exerciciosOracle;
 
 import javax.swing.JOptionPane;
 
