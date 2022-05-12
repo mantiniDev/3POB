@@ -17,6 +17,10 @@ public class ProjetoExerc {
         
         String alturaString = JOptionPane.showInputDialog("Qual sua altura?");
         double altura = Double.parseDouble(alturaString);
+
+        String alturaString = JOptionPane.showInputDialog("Qual sua altura?");
+        double altura = Double.parseDouble(alturaString);
+        
         
         
         
