@@ -12,6 +12,7 @@ public class main {
 		while(i == 1) {
 			System.out.println("(1)-adicionar um aluno\n(2)-remover um aluno da lista\n(3)-alterar um aluno\n(4)-exibir lista\n(0)-sair do programa: ");
 			int option = scanner.nextInt();
+			String codBarras;
 			switch (option) {
 			case 1: 
 				System.out.println("Digite o nome do aluno: ");
@@ -19,7 +20,14 @@ public class main {
 				System.out.println("Digite agora a matricula: ");
 				mat = scanner.next();
 
-				if(listarProduto.inserirProduto(id, nome, codBarras, sku, descricao, categoria, preco, peso, fabricante) == 1) {
+					int id;
+					String sku;
+					String descricao;
+					String categoria;
+					double preco;
+					double peso;
+					String fabricante;
+					if(listarProduto.inserirProduto(id, nome, codBarras, sku, descricao, categoria, preco, peso, fabricante) == 1) {
 					System.out.println("Sucesso na insercao");
 				}
 				else {
@@ -42,7 +50,7 @@ public class main {
 				codBarras = scanner.next();
 				System.out.println("Digite o nvo nome do aluno:");
 				nome = scanner.next();
-				if(listarProduto.atualizarProduto(nome, mat) == 1) {
+				if(listarProduto(nome, mat) == 1) {
 					System.out.println("Sucesso");
 				}else {
 					System.out.println("Falha");
@@ -58,5 +66,9 @@ public class main {
 
 			}
 		}
+	}
+
+	private static int listarProduto(String nome, String mat) {
+		return 0;
 	}
 }
