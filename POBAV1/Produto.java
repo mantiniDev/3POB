@@ -1,4 +1,4 @@
-package 3POB AV1;
+package POBAV1;
 
     public class Produto {//Id, nome,cod de barras, descrição, categoria, preço, peso e fabricante
         private int id;

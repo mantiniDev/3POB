@@ -1,4 +1,4 @@
-package 3POB AV1;
+package POBAV1;
 
 import java.util.Scanner;
 
